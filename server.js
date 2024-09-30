@@ -15,7 +15,7 @@ const user=mongoose.model("user",userS);
 
 app.get("/",async(req,res)=>{
 
-    await user.create({name:"Testuser"});
+    await user.create({name:"sauraksha"});
     res.send(await user.find());
 
 });
